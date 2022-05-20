@@ -23,16 +23,16 @@ jobs:
       run: docker build . --file Dockerfile --tag mytest
     
     - name: Run Test
-      run: docker run mytest
+      run: docker run mytest -v ./report:/app/report
       
     - name: Create test summary
       uses: test-summary/action@v1.0
       with:
-        paths: results.xml
+        paths: report/results.xml
       if: always()
       
     - name: Publish Test Results
       uses: EnricoMi/publish-unit-test-result-action@v1
       if: always()
       with:
-        files: "results.xml"
+        files: "report/results.xml"
