@@ -2,6 +2,7 @@
 Sample for Webdriver
 
 [![Run in GitHub Actions](https://github.com/BurhanH/silver-tribble/actions/workflows/run-tests.yml/badge.svg)](https://github.com/BurhanH/silver-tribble/actions/workflows/run-tests.yml)
+[![Run in pure Docker](https://github.com/BurhanH/silver-tribble/actions/workflows/run-tests-in-docker.yml/badge.svg)](https://github.com/BurhanH/silver-tribble/actions/workflows/run-tests-in-docker.yml)
 
 ## How to install
 - npm install
