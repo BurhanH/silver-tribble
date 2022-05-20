@@ -1,11 +1,11 @@
-name: Run in pure Docker
+name: Run in Docker-Compose
 
 on:
   push:
     branches: [ main ]
   pull_request:
     branches: [ main ]
-    
+
 permissions:
   checks: write
   pull-requests: write
@@ -18,12 +18,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-
-    - name: Build the Docker image
-      run: docker build . --file Dockerfile --tag mytest
     
     - name: Run Test
-      run: docker run -v $(pwd)/report:/app/report -t mytest
+      run: docker-compose up
       
     - name: Create test summary
       uses: test-summary/action@v1.0
