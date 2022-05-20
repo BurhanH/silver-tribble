@@ -23,7 +23,7 @@ jobs:
       run: docker build . --file Dockerfile --tag mytest
     
     - name: Run Test
-      run: docker run -v $(pwd)/report:/app/report -it mytest
+      run: docker run -v $(pwd)/report:/app/report -t mytest
       
     - name: Create test summary
       uses: test-summary/action@v1.0
