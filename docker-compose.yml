@@ -8,6 +8,9 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+     
+    volumes:
+      - ./report:/app/report
 
     working_dir: /app
 
