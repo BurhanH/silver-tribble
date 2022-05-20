@@ -6,6 +6,10 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  checks: write
+  pull-requests: write
+
 jobs:
 
   build:
@@ -17,3 +21,15 @@ jobs:
     
     - name: Run Test
       run: docker-compose up
+      
+    - name: Create test summary
+      uses: test-summary/action@v1.0
+      with:
+        paths: results.xml
+      if: always()
+      
+    - name: Publish Test Results
+      uses: EnricoMi/publish-unit-test-result-action@v1
+      if: always()
+      with:
+        files: "results.xml"
