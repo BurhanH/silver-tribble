@@ -1,0 +1,17 @@
+{
+    "dependencies": {
+        "mocha": "^10.0.0",
+        "webdriverio": "^7.19.7"
+    },
+    "devDependencies": {
+        "@wdio/cli": "^7.19.7",
+        "@wdio/local-runner": "^7.19.7",
+        "@wdio/mocha-framework": "^7.19.7",
+        "@wdio/spec-reporter": "^7.19.7",
+        "chromedriver": "^101.0.0",
+        "wdio-chromedriver-service": "^7.3.2"
+    },
+    "scripts": {
+        "wdio": "wdio run wdio.conf.js"
+    }
+}
