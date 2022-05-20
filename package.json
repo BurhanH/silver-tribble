@@ -1,5 +1,6 @@
 {
     "dependencies": {
+        "@wdio/junit-reporter": "^7.19.7",
         "mocha": "^10.0.0",
         "webdriverio": "^7.19.7"
     },
