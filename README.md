@@ -1,6 +1,8 @@
 # silver-tribble
 Sample for Webdriver
 
+[![Run in GitHub Actions](https://github.com/BurhanH/silver-tribble/actions/workflows/run-tests.yml/badge.svg)](https://github.com/BurhanH/silver-tribble/actions/workflows/run-tests.yml)
+
 ## How to install
 - npm install
 
