@@ -1,8 +1,6 @@
 name: Run in GitHub Actions
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
 
