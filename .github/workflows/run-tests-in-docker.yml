@@ -1,8 +1,6 @@
 name: Run in pure Docker
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
     branches: [ main ]
     
